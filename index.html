@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="urf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Test</title>
+
+  <link rel="stylesheet" href="assets/vendor/bootstrap-4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <script src="assets/vendor/jquery-3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="py-5">
+
+      <form id="gist-form">
+        <div class="input-group">
+          <input id="gist-field" type="text" pattern="[a-f,0-9]{32}" class="form-control" placeholder="Enter a Gist ID (32 hex characters)" required>
+          <div class="input-group-append">
+            <button id="gist-load" class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+      <br>
+
+      <div class="card bg-dark">
+        <pre class="card-body m-0"><code id="reply-content" class="text-white">stuff...</code></pre>
+      </div>
+    </div>
+
+
+<!--     <button id="gist-clear" class="btn btn-primary" type="button">Clear</button> -->  
+</div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
