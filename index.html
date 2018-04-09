@@ -12,15 +12,16 @@
 
   <script src="assets/vendor/jquery-3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
   <div class="container">
     <div class="py-5">
 
       <form id="gist-form">
         <div class="input-group">
-          <input id="gist-field" type="text" pattern="[a-f,0-9]{32}" class="form-control" placeholder="Enter a Gist ID (32 hex characters)" required>
+          <input id="gist-field" type="text" pattern="[a-f,0-9]{32}" class="form-control" placeholder="Paste gist URL, or enter a Gist ID (32 hex characters)" autocomplete=off required>
           <div class="input-group-append">
-            <button id="gist-load" class="btn btn-primary" type="submit">Load Gist</button>
+            <button id="gist-download" class="btn btn-success" type="submit">Load Gist</button>
           </div>
         </div>
       </form>
@@ -29,11 +30,31 @@
       <div class="card bg-dark">
         <pre class="card-body m-0"><code id="reply-content" class="text-white">stuff...</code></pre>
       </div>
+
+      <br>
+
+      <!-- <form id="content-form">
+        <div class="input-group">
+          <input id="content-description" class="form-control" autocomplete=off placeholder="Gist Description">
+        </div>
+
+        <div id="files">
+          <div class="file">
+          </div>
+        </div>
+
+      </form> -->
+
+      <br>
+
+      <!-- <button id="gist-upload" class="btn btn-danger" type="submit">Upload as New Gist</button>--> 
     </div>
 
 
 <!--     <button id="gist-clear" class="btn btn-primary" type="button">Clear</button> -->  
 </div>
+  <script src="assets/js/gist.js"></script>
+  <script src="assets/js/queryString.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
